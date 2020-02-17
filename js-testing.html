@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+	<!-- <p id="test">[3, 5, -9, 1, 3, -2, 3, 4, 7, 2, 9, 6, 3, 1, -5, 4]</p> -->
+	<button type="button" onclick="myFunction()">Find adjacent element</button>
+
+	<script>
+		function myFunction() {
+			document.getElementById("test").innerHTML = "Paragraph changed.";
+		}
+
+		const findSequence = function (arr) {
+
+			let maximumValue = 0, finalMaximumValue = 0;
+			let newArray = []
+
+			for (let i = 0; i < arr.length; i++) {
+				maximumValue = Math.max(0, maximumValue + arr[i]);
+				finalMaximumValue = Math.max(maximumValue, finalMaximumValue);
+			}
+			return finalMaximumValue;
+		}
+		const findMax = function (numOne, numTwo) {
+			if (numOne > numTwo) {
+				return numOne
+			} else {
+				numTwo
+			}
+		}
+	</script>
+
+</body>
+
+</html>
